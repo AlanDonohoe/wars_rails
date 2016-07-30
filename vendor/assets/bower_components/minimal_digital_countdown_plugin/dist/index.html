@@ -1,0 +1,51 @@
+<!doctype html><html lang=""><head><meta charset="utf-8"><meta name="description" content=""><meta name="viewport" content="width=device-width,initial-scale=1"><title>digital_countdown</title><link rel="apple-touch-icon" href="apple-touch-icon.png"><!-- Place favicon.ico in the root directory --><link rel="stylesheet" href="styles/main.css"><style type="text/css">body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+
+    html, body {
+        height: 100%;
+    }
+
+    .full-height-container {
+      height:100vh;
+    }
+
+    .centre
+    {
+      width: 100%;
+      margin:0 auto;
+      text-align: center;
+    }
+
+    .flex-container {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flex-item {
+        padding: 5px;
+        margin: 10px;
+        text-align: center;
+    }</style></head><body><!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--><div class="flex-container"><div class="flex-item"><div class="clock"></div></div></div><script src="scripts/vendor.js"></script><!-- JavaScript Includes --><script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script><script src="scripts/main.js"></script><script>$(function(){
+      'use strict';
+      // var noMSecsReqToHideSumoMe = 1500;
+      $('.clock').countdownDigital({
+        dateTo: '2016-09-23T20:00',
+        labels: false,
+        showBlank: true,
+        showMSecs: true,
+        seperatorChar: ','
+      });
+    });</script></body></html>

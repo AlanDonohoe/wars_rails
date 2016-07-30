@@ -1,0 +1,39 @@
+// - - - - - - - - - - - - - - - - - - -
+// - - layout
+// global layout classes - height, width, padding, margin, etc.
+
+.full-height-container {
+    height:100vh;
+}
+
+.centre
+{
+	width: 100%;
+	margin:0 auto;
+	text-align: center;
+}
+
+.flex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flex-item {
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+img.date {
+    width: 30%;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "wars",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "modernizr": "~2.8.1",
+    "minimal_digital_countdown_plugin": "digital_countdown_plugin#*",
+    "moment": "^2.13.0",
+    "angular": "^1.5.7",
+    "angular-ui-router": "^0.3.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}

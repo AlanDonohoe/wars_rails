@@ -1,0 +1,70 @@
+// bower:scss
+// endbower
+@charset 'utf-8';
+
+
+// - - css-burrito v1.6 | mit license | github.com/jasonreece/css-burrito
+
+// - - - - - - - - - - - - - - - - - - -
+// - - application.scss
+// contains an import section for libs, global, and modules, the inbox,
+// and a shame section for quick fixes and hacks.
+
+// - - variable overrides for 3rd party libraries
+@import 'libs/library-variable-overrides';
+
+// - - - - - - - - - - - - - - - - - - -
+// - - global
+
+// - - global/settings
+// sass variables and maps
+@import 'global/settings';
+
+// - - global/utilities
+// extends, functions, and mixins
+@import 'global/utilities';
+
+// - - global/layout
+// margin, padding, sizing
+@import 'global/layout';
+
+// - - global/skin
+// backgrounds, borders, box-shadow, etc
+@import 'global/skin';
+
+// - - global/typography
+// fonts and colors
+@import 'global/typography';
+
+// - - global/base
+// base-level tags (body, p, etc.)
+@import 'global/base';
+
+// - - - - - - - - - - - - - - - - - - -
+// - - modules
+// add new modules to the modules/_modules.scss file and they'll get pulled in here.
+@import 'modules/modules';
+
+// - - - - - - - - - - - - - - - - - - -
+// - - libs
+// add 3rd party libraries here.
+// be sure to load them after the variable overrides file
+@import 'libs/milligram';
+@import 'libs/digital-countdown';
+
+
+// - - - - - - - - - - - - - - - - - - -
+// - - inbox
+// the inbox allows developers, and those not actively working on the project
+// to quickly add styles that are easily seen by the maintainer of the file.
+
+// - - - - - - - - - - - - - - - - - - -
+// - - shame
+// need to add a quick fix, hack, or questionable technique?  add it here, fix it later.
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}

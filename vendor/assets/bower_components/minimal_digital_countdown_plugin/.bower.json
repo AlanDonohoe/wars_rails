@@ -1,0 +1,37 @@
+{
+  "name": "minimal_digital_countdown_plugin",
+  "version": "1.0.9",
+  "dependencies": {
+    "jquery": "~2.1.1"
+  },
+  "authors": [
+    "@inoratdawn",
+    "@ghostfacecoder"
+  ],
+  "description": "Digital Style Countdown",
+  "main": "assets/js/digital-countdown.js",
+  "keywords": [
+    "jquery",
+    "javascript",
+    "digital",
+    "countdown"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.jqueryscript.net/time-clock/Minimal-Digital-Countdown-Plugin-with-jQuery-Moment-js.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "1.0.9",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.9",
+    "commit": "43d1bed9319f8472266d4ddc6e89c324b3bbeab1"
+  },
+  "_source": "https://github.com/AlanDonohoe/digital_countdown.git",
+  "_target": "*",
+  "_originalSource": "digital_countdown_plugin"
+}
