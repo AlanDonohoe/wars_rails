@@ -16,4 +16,8 @@
 # Ignore Byebug command history file.
 .byebug_history
 
+# ignore sensitive data
 .env
+
+# Ignore application configuration
+/config/application.yml

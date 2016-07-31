@@ -1,10 +1,5 @@
-<div class="flex-container" id="main-container" style="display:none">
-  <div class="border-wrapper">
-    <div class="flex-item">
-      <%= image_tag('date_grey_2x', class: "date") %>
-    </div>
-    <div class="flex-item">
-      <div class="clock"></div>
-    </div>
-  </div>
-</div>
+<% if ENV['SHOW_COUNTDOWN_PAGE'].present? %>
+  <%= render partial: 'pages/countdown' %>
+<% else %>
+  <%= render partial: 'pages/live' %>
+<% end %>
