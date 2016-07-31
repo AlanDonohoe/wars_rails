@@ -4,5 +4,6 @@
 //= require minimal_digital_countdown_plugin/dist/scripts/main
 //= require moment/min/moment.min
 //= require jquery-modal/jquery.modal
+//= require app
 //= require main
 //= require_tree .

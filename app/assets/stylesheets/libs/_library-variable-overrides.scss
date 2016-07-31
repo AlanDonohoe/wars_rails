@@ -42,7 +42,7 @@ input[type='reset']:focus,
 input[type='submit']:hover,
 input[type='submit']:focus {
   background-color: #3399ff; 
-  border-color: #4774a0;
+  border: 0.1rem solid white;
   color: #fff;
   outline: 0;
 }
