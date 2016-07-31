@@ -36,7 +36,7 @@ blockquote {
 blockquote *:last-child {
   margin: 0;
 }
-
+/*
 .button,
 button,
 input[type='button'],
@@ -59,6 +59,7 @@ input[type='submit'] {
   text-transform: uppercase;
   white-space: nowrap;
 }
+
 .button:hover, .button:focus,
 button:hover,
 button:focus,
@@ -73,6 +74,7 @@ input[type='submit']:focus {
   color: #fff;
   outline: 0;
 }
+*/
 .button.button-disabled, .button[disabled],
 button.button-disabled,
 button[disabled],

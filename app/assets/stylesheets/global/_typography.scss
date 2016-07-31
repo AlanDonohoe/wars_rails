@@ -7,3 +7,20 @@ $body-font-size: 16px;
 $headline-font-size: 32px;
 $byline-font-size: 12px;
 $line-height: 1.5;
+
+
+@font-face{ 
+    font-family: 'stencil';
+    font-weight: normal;
+    font-style: normal;
+    src: font-url('boston_traffic.ttf') format('truetype');
+}
+
+.stencil-font {
+    font-family: stencil;
+}
+
+.large-text {
+    color:white;
+    font-size: 50px;
+}
