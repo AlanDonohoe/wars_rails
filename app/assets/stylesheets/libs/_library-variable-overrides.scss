@@ -12,8 +12,8 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  background-color: #4774a0;
-  border: 0.1rem solid rgba(51, 153, 255, 0.55);
+  background-color: #497fb5;
+  border: 0.1rem solid white;
   border-radius: 0.4rem;
   color: #fff;
   cursor: pointer;
@@ -41,8 +41,8 @@ input[type='reset']:hover,
 input[type='reset']:focus,
 input[type='submit']:hover,
 input[type='submit']:focus {
-  background-color: rgba(51, 153, 255, 0.55);
-  border-color: #606c76;
+  background-color: #3399ff; 
+  border-color: #4774a0;
   color: #fff;
   outline: 0;
 }
