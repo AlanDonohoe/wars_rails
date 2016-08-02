@@ -12,14 +12,14 @@
   </div>
 </div>
 
-<div class="modal fade flex-container" id="join-modal" style="display:none;">
+<div class="modal fade flex-container" id="join-modal" ng-controller="EmailController as emailCntrl" style="display:none;">
 <div class="flex-item">
   <h2 class="stencil-font">Join The Red Stars</h2>
   <p>We will not share your email with any third parties or evil corporations</p>
-  <form>
+  <form ng-submit="emailCntrl.postEmail(address)">
   <fieldset>
     <label for="nameField">Email</label>
-    <input type="email" placeholder="gordon@onecorp.com" id="nameField">
+    <input type="email" placeholder="gordon@onecorp.com" id="nameField" ng-model="emailCntrl.emailAddress">
     <input class="button-primary stencil-font" type="submit" value="Join">
   </fieldset>
 </form>
