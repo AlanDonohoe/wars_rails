@@ -7,7 +7,7 @@
       console.log('EmailController emailAddress: ' + this.emailAddress);
       postNewEmailAddress(this.emailAddress);
       this.emailAddress ='';
-      $.modal.close();
+      $.modal.close(); 
     };
 
     function postNewEmailAddress(emailAddress) {
