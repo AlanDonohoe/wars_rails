@@ -1,16 +1,16 @@
 // Angular app.
 (function() {
   var app = angular.module('wars',[]);
-  app.controller('EmailController', function($http) {
+  app.controller('EmailController', ['$http', function($http) {
     this.emailAddress ='';
     this.postEmail = function postEmail() {
       console.log('EmailController emailAddress: ' + this.emailAddress);
-      postNewEmailAddress(this.emailAddress);
+      postNewEmailAddress($http, this.emailAddress);
       this.emailAddress ='';
       $.modal.close(); 
     };
 
-    function postNewEmailAddress(emailAddress) {
+    function postNewEmailAddress($http, emailAddress) {
       $http({
         url: 'https://email-elephant.herokuapp.com/emails',
         method: "POST",
@@ -22,5 +22,6 @@
         console.log('errorCallback' + response);
       });
     }
-  });
+  }]);
+  // EmailController.$inject = ['$http'];
 })();
