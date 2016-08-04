@@ -44,3 +44,11 @@ $dark-grey: #333333;
  }
  
 }
+
+#main-container {
+  background-image: image-url("bloody-grey-bkgrnd.jpg");
+}
+
+.border-wrapper {
+  background-color: $dark-grey;
+}
