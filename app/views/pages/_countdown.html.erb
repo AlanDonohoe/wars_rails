@@ -1,24 +1,26 @@
-<div class="flex-container full-screen" id="main-container" style="display:none">
-  <div class="border-wrapper">
-    <div class="flex-item">
-      <div class="clock"></div>
+<div class="countdown-container flex-container">
+  <div class="semi-screen-content">
+    <div class="border-wrapper">
+      <div class="flex-item">
+        <div class="clock round-corners"></div>
+      </div>
+    </div>
+    <div class="flex-item pth">
+      <a class="button large-text ptl" href="#join-modal" rel="modal:open">Join W. A. R. S.</a>
     </div>
   </div>
-  <div class="flex-item pth">
-    <a class="button stencil-font large-text" href="#join-modal" rel="modal:open">Join W.A.R.S.</a>
+  <div class="modal fade flex-container" id="join-modal" ng-controller="EmailController as emailCntrl" style="display:none;">
+    <div class="flex-item">
+      <p>Join W. A. R. S.</p>
+      <p>We will not share your email with any third parties or evil corporations</p>
+      <form ng-submit="emailCntrl.postEmail(address)">
+        <fieldset>
+          <label for="nameField">Email</label>
+          <input type="email" placeholder="gordon@onecorp.com" id="nameField" ng-model="emailCntrl.emailAddress">
+          <input class="button-primary mtl" type="submit" value="Join">
+        </fieldset>
+      </form>
+    </div>
   </div>
 </div>
 
-<div class="modal fade flex-container" id="join-modal" ng-controller="EmailController as emailCntrl" style="display:none;">
-<div class="flex-item">
-  <h2 class="stencil-font">Join The Red Stars</h2>
-  <p>We will not share your email with any third parties or evil corporations</p>
-  <form ng-submit="emailCntrl.postEmail(address)">
-  <fieldset>
-    <label for="nameField">Email</label>
-    <input type="email" placeholder="gordon@onecorp.com" id="nameField" ng-model="emailCntrl.emailAddress">
-    <input class="button-primary stencil-font" type="submit" value="Join">
-  </fieldset>
-</form>
-</div>
-</div>

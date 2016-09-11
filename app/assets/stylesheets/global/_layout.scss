@@ -27,9 +27,46 @@
 }
 
 .flex-item {
+  /*
     padding: 5px;
     margin: 10px;
+  */
     text-align: center;
+}
+
+.countdown-container {
+  background-image: url('/assets/wars_graffiti_logo.jpg');
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%; /* 2:1 */
+
+}
+
+.content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction  : column;
+  -ms-flex-direction      : column;
+  flex-direction          : column;
+  -webkit-justify-content : center; 
+  justify-content         : center; 
+
+  position: absolute;
+  top: 0; bottom: 0;
+  /*left: 30px; right: 30px; */
+}
+
+.semi-screen-content {
+  @extend .content;
+  max-width: 80%;
 }
 
 .full-screen {

@@ -2,7 +2,8 @@
 // - - library variable overrides
 // variable overrides for 3rd party libraries
 
-$countdown-bkgrnd-clr: #333333;
+$countdown-bkgrnd-clr: black;
+$light-blue: #0EC2FF; // was: #3399ff; 
 
 
 // And just regular selector overrides:
@@ -12,24 +13,22 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  background-color: #497fb5;
-  border: 0.1rem solid white;
+  background-color: #3399cc;
+  border: 0.1rem white;
+  border-style: solid;
   border-radius: 0.4rem;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-size: 1.1rem;
-  font-weight: 300;
   height: 5.8rem;
-  letter-spacing: 0.1rem;
-  line-height: 3.8rem;
   padding: 0 3rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
-  font-family: stencil;
+  /*
   padding-top: 15px;
+  */
 }
 
 .button:hover, .button:focus,
@@ -41,8 +40,7 @@ input[type='reset']:hover,
 input[type='reset']:focus,
 input[type='submit']:hover,
 input[type='submit']:focus {
-  background-color: #3399ff; 
-  border: 0.1rem solid white;
+  background-color: $light-blue; 
   color: #fff;
   outline: 0;
 }

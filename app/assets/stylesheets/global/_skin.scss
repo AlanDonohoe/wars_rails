@@ -9,19 +9,17 @@ $complimentary-green: #02B602;
 $triad-green: #8ED402;
 $complimentary-blue-1: #3BA7A7;
 $complimentary-blue-2: #1B9898;
-$light-blue: #3399ff;
+$light-blue: #0EC2FF; // was: #3399ff; 
 $grey: #333333;
 $grey-pink: #ffcccc;
 $dark-grey: #333333;
 
 .border-wrapper {
-    border: 2px solid $light-blue;
-    border-radius: 7px;
-    /* make it round */
+  border: 2px solid $light-blue;
+  /* make it round */
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px; /* future proofing */
-
 	/* animate */
 	animation: pulse 2s infinite;
 }
@@ -43,6 +41,12 @@ $dark-grey: #333333;
             box-shadow: 0px 0px 100px $light-blue; /* some variation of blue for the shadow */
  }
  
+}
+
+.round-corners {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px; /* future proofing */
 }
 /*
 #main-container {
