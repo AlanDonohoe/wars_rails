@@ -11,7 +11,8 @@
             seperator: true,
             seperatorChar: ',',
             showMSecs: false,
-            refreshRateMsecs: 0
+            refreshRateMsecs: 0,
+            pad: 8
 
         }, options);
 
@@ -40,11 +41,11 @@
             var dateTo = moment(_defaults.dateTo);
             var dateNow = (_defaults.dateNow === null) ? moment() : _defaults.dateNow;
             var dateDiff = true === _defaults.showMSecs ? dateTo.diff(dateNow) : dateTo.diff(dateNow, 'seconds');
-            var digit_holder = $('<div class="_digits"></div>').appendTo(element);
+            var digitHolder = $('<div class="_digits"></div>').appendTo(element);
 
             $.each(_labels, function(labelKey, labelVal) {
                 if(dateDiff > 0) {
-                    num = pad(dateDiff, 8);
+                    num = pad(dateDiff, _defaults.pad);
                     numSplit = num.toString().split("");
                 } else {
                     numSplit = ['0','0'];
@@ -84,7 +85,7 @@
                 });
                 if (_defaults.labels) { label.append('<span class="text">'+labelVal+'</span>'); }
                 label.append('<span class="dots"></span>');
-                label.appendTo(digit_holder);
+                label.appendTo(digitHolder);
             });
 
         }
@@ -97,7 +98,7 @@
 
             if(dateDiff > 0) {
                 $.each(_labels, function(key, val){
-                    var num = pad(dateDiff, 8);
+                    var num = pad(dateDiff, _defaults.pad);
                     var numSplit = num.toString().split("");
                     var numSplitWithCommas = addCommas(numSplit);
                     var dig, isComma, isColon;
@@ -154,19 +155,8 @@
         }
 
         function addCommas(numbers) {
-            var numbers_with_commas = numbers;
-            var arr_length = numbers_with_commas.length;
-            var i;
-            for (i = arr_length; i > 0; --i) {
-                if (0 === i % 3) {
-                    numbers_with_commas.splice(i -2 , 0, 'comma');
-                }
-            }
-            if (true === _defaults.showMSecs) {
-                arr_length = numbers_with_commas.length;
-                numbers_with_commas[arr_length - 4] = 'colon';
-            }
-            return numbers_with_commas;
+            if (true === _defaults.showMSecs && numbers.length > 4) { numbers.splice(numbers.length -3, 0, 'colon'); }
+            return numbers;
         }
     };
     
