@@ -4,7 +4,7 @@ var countDownTimer = (function () {
   return {
     init: function init() {
         $('.clock').countdownDigital({
-            dateTo: '2016-10-23T20:00',
+            dateTo: '2016-10-24T20:00',
             labels: false,
             showBlank: true,
             showMSecs: true,
