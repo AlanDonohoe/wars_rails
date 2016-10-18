@@ -1,11 +1,13 @@
 {
   "name": "minimal_digital_countdown_plugin",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "dependencies": {
-    "jquery": "~2.1.1"
+    "jquery": "~2.1.1",
+    "moment": "^2.15.1"
   },
   "authors": [
-    "@inoratdawn", "@ghostfacecoder"
+    "@inoratdawn",
+    "@ghostfacecoder"
   ],
   "description": "Digital Style Countdown",
   "main": "assets/js/digital-countdown.js",

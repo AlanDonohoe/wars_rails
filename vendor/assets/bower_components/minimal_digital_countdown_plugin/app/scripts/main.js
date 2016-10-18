@@ -35,28 +35,40 @@
 
         var _mSecsRefreshDisplay;
 
+        function pad(num, size) {
+            // Add the leading zeros to the numbers
+            var s = num + '';
+            while (s.length < size) { s = '0' + s; }
+            return s;
+        }
+
+        function addCommas(numbers) {
+            if (_defaults.showMSecs === true && numbers.length > 4) { numbers.splice(numbers.length - 3, 0, 'colon'); }
+            return numbers;
+        }
+
         function drawCountdown(element) {
 
             var num, numSplit, numSplitWithCommas, isComma, isColon, digit, i;
             var dateTo = moment(_defaults.dateTo);
             var dateNow = (_defaults.dateNow === null) ? moment() : _defaults.dateNow;
-            var dateDiff = true === _defaults.showMSecs ? dateTo.diff(dateNow) : dateTo.diff(dateNow, 'seconds');
+            var dateDiff = _defaults.showMSecs === true ? dateTo.diff(dateNow) : dateTo.diff(dateNow, 'seconds');
             var digitHolder = $('<div class="_digits"></div>').appendTo(element);
 
             $.each(_labels, function(labelKey, labelVal) {
                 if(dateDiff > 0) {
                     num = pad(dateDiff, _defaults.pad);
-                    numSplit = num.toString().split("");
+                    numSplit = num.toString().split('');
                 } else {
-                    numSplit = ['0','0'];
+                    numSplit = ['0', '0'];
                 }
                 numSplitWithCommas = addCommas(numSplit);
                 var label = $('<div></div>', {
-                    class: 'each ' +labelVal
+                    class: 'each ' + labelVal
                 });
                 $.each(numSplitWithCommas, function(numberKey, numberVal) {
-                    isComma = ('comma' === numberVal) ? true : false;
-                    isColon = ('colon' === numberVal) ? true : false;
+                    isComma = (numberVal === 'comma') ? true : false;
+                    isColon = (numberVal === 'colon') ? true : false;
 
                     if (isComma) {
                         digit = $('<div></div>', {
@@ -65,14 +77,14 @@
                         digit.append('<span class="comma">' + _defaults.seperatorChar + '</span>');
                     } else if (isColon) {
                         digit = $('<div></div>', {
-                            class: 'colon digit '+ labelVal + '_' + numberKey
+                            class: 'colon digit ' + labelVal + '_' + numberKey
                         });
                         digit.append('<span class="colon">.</span>');
                     } else {
                         digit = $('<div></div>', {
                             class: 'real-number digit ' + labelVal + '_' + numberKey
                         });
-                        for(i=1; i<8; i+=1){
+                        for(i = 1; i < 8; i += 1){
                             digit.append('<span class="side d' + i + '">');
                         }
                         if(dateDiff > 0) {
@@ -83,7 +95,7 @@
                     }
                     digit.appendTo(label);
                 });
-                if (_defaults.labels) { label.append('<span class="text">'+labelVal+'</span>'); }
+                if (_defaults.labels) { label.append('<span class="text">' + labelVal + '</span>'); }
                 label.append('<span class="dots"></span>');
                 label.appendTo(digitHolder);
             });
@@ -94,33 +106,33 @@
 
             var dateTo = moment(_defaults.dateTo);
             var dateNow = (_defaults.dateNow === null) ? moment() : _defaults.dateNow;
-            var dateDiff = true === _defaults.showMSecs ? dateTo.diff(dateNow) : dateTo.diff(dateNow, 'seconds');
+            var dateDiff = _defaults.showMSecs === true ? dateTo.diff(dateNow) : dateTo.diff(dateNow, 'seconds');
 
             if(dateDiff > 0) {
                 $.each(_labels, function(key, val){
                     var num = pad(dateDiff, _defaults.pad);
-                    var numSplit = num.toString().split("");
+                    var numSplit = num.toString().split('');
                     var numSplitWithCommas = addCommas(numSplit);
                     var dig, isComma, isColon;
 
-                    $.each(numSplitWithCommas, function(key_no, val_no){
-                      isComma = 'comma' === val_no ? true : false;
-                      isColon = 'colon' === val_no ? true : false;
+                    $.each(numSplitWithCommas, function(keyNo, valNo){
+                      isComma = valNo === 'comma' ? true : false;
+                      isColon = valNo === 'colon' ? true : false;
                         if (isComma) {
-                            dig = $(element).find('.digit.'+val+'_'+key_no);
-                            dig.removeClass().addClass('comma digit '+val+'_'+key_no);
+                            dig = $(element).find('.digit.' + val + '_' + keyNo);
+                            dig.removeClass().addClass('comma digit ' + val + '_' + keyNo);
                         }
                         else if (isColon) {
-                            dig = $(element).find('.digit.'+val+'_'+key_no);
-                            dig.removeClass().addClass('colon digit '+val+'_'+key_no);
+                            dig = $(element).find('.digit.' + val + '_' + keyNo);
+                            dig.removeClass().addClass('colon digit ' + val + '_' + keyNo);
                         } else {
-                            dig = $(element).find('.digit.'+val+'_'+key_no);
-                            dig.removeClass().addClass('real-number digit '+val+'_'+key_no+' '+_digits[val_no]);
+                            dig = $(element).find('.digit.' + val + '_' + keyNo);
+                            dig.removeClass().addClass('real-number digit ' + val + '_' + keyNo + ' ' + _digits[valNo]);
                         }
                     });
                 });
             } else {
-                $.each(_labels, function(key, val){
+                $.each(_labels, function(){
                     var dig = $(element).find('.digit');
                     dig.addClass('zero');
                 });
@@ -139,25 +151,13 @@
 
             var element = $(this);
             // only need to update display every second if we not showing msecs
-            _mSecsRefreshDisplay = true === _defaults.showMSecs ? 210 : 1000;
+            _mSecsRefreshDisplay = _defaults.showMSecs === true ? 210 : 1000;
             // override refreshRate if its been manually set
             _mSecsRefreshDisplay = _defaults.refreshRateMsecs > 0 ?
               _defaults.refreshRateMsecs : _mSecsRefreshDisplay;
             drawCountdown(element);
             startCountdown(element);
         });
-
-        function pad(num, size) {
-            // Add the leading zeros to the numbers
-            var s = num + '';
-            while (s.length < size) { s = '0' + s; }
-            return s;
-        }
-
-        function addCommas(numbers) {
-            if (true === _defaults.showMSecs && numbers.length > 4) { numbers.splice(numbers.length -3, 0, 'colon'); }
-            return numbers;
-        }
     };
-    
+
 }(window, jQuery));

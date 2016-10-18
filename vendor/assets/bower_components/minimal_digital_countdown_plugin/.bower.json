@@ -1,8 +1,9 @@
 {
   "name": "minimal_digital_countdown_plugin",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "dependencies": {
-    "jquery": "~2.1.1"
+    "jquery": "~2.1.1",
+    "moment": "^2.15.1"
   },
   "authors": [
     "@inoratdawn",
@@ -25,11 +26,11 @@
     "test",
     "tests"
   ],
-  "_release": "1.0.11",
+  "_release": "1.0.12",
   "_resolution": {
     "type": "version",
-    "tag": "v1.0.11",
-    "commit": "901358fc2d879a04243375d840f58f5f98c647f9"
+    "tag": "v1.0.12",
+    "commit": "be77254345906530511f810007504cccc55998c6"
   },
   "_source": "https://github.com/AlanDonohoe/digital_countdown.git",
   "_target": "*",

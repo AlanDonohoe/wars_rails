@@ -4,11 +4,12 @@ var countDownTimer = (function () {
   return {
     init: function init() {
         $('.clock').countdownDigital({
-            dateTo: '2016-09-23T20:00',
+            dateTo: '2016-10-23T20:00',
             labels: false,
             showBlank: true,
             showMSecs: true,
-            seperatorChar: ','
+            seperatorChar: ',',
+            pad: 10
         });
 
     setTimeout(function(){
