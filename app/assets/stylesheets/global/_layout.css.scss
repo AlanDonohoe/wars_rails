@@ -3,7 +3,7 @@
 // global layout classes - height, width, padding, margin, etc.
 
 .full-height-container {
-    height:100vh;
+  height:100vh;
 }
 
 .centre
@@ -15,24 +15,25 @@
 
 /*
 .flex-container {
-    padding: 0;
-    margin: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .flex-item {
-    padding: 5px;
-    margin: 10px;
-    text-align: center;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
 }
 */
+
 .countdown-container {
   // background: image-url('wars_graffiti_logo_faded.jpg');
   // background-image: image-url('wars_graffiti_logo.jpg');
@@ -70,10 +71,16 @@
 }
 
 .full-screen {
-    height: 100%;
+  height: 100%;
 }
 
 img.date {
-    width: 30%;
+  width: 30%;
 }
 
+.fill-container {
+  width:auto;
+  height:auto;
+  max-width:1000px;
+  max-height:1000px;
+}

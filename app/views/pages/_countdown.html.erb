@@ -1,7 +1,13 @@
 <div class="container">
   <div class="row">
-    <div class="column centre pth">
+    <div class="column centre">
+      <%= image_tag 'wars_poster_2017', class: 'fill-container' %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column centre pth pbh">
       <a class="button large-text ptl" href="#join-modal" rel="modal:open">Join W. A. R. S.</a>
     </div>
   </div>
 </div>
+<%= render 'modals/email_sign_up' %>
