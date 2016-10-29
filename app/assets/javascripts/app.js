@@ -4,7 +4,7 @@
   app.controller('EmailController', ['$http', function($http) {
     this.emailAddress ='';
     this.postEmail = function postEmail() {
-      console.log('EmailController emailAddress: ' + this.emailAddress);
+      // console.log('EmailController emailAddress: ' + this.emailAddress);
       postNewEmailAddress($http, this.emailAddress);
       this.emailAddress ='';
       $.modal.close(); 

@@ -3,8 +3,10 @@
 // variable overrides for 3rd party libraries
 
 $countdown-bkgrnd-clr: black;
-$light-blue: #0EC2FF; // was: #3399ff; 
-
+$light-blue: #0EC2FF; // was: #3399ff;
+$darker-blue: #3399cc; 
+$light-red: #CF1317;
+$darker-red: #840F12;
 
 // And just regular selector overrides:
 
@@ -13,7 +15,7 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  background-color: #3399cc;
+  background-color: $darker-red; // was: $darker-blue;
   border: 0.1rem white;
   border-style: solid;
   border-radius: 0.4rem;
@@ -40,7 +42,7 @@ input[type='reset']:hover,
 input[type='reset']:focus,
 input[type='submit']:hover,
 input[type='submit']:focus {
-  background-color: $light-blue; 
+  background-color: $light-red; 
   color: #fff;
   outline: 0;
 }
