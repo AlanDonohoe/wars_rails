@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <%= render 'layouts/monologue/application/head' %>
+</head>
+<body>
+  <div class="container">
+    <header class="main-header sixteen columns clearfix">
+    </header>
+
+    <div class="content twelve columns">
+      <%= yield %>
+    </div>
+
+      <%= render 'layouts/monologue/application/sidebar' %>
+  </div>
+  <% if content_for?(:footer) %>
+    <footer>
+      <%= yield :footer %>
+    </footer>
+  <% end %>
+</body>
+</html>
