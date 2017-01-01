@@ -1,0 +1,66 @@
+/* Monologue blogging engine overrides */
+html, body
+{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  position: relative;
+}
+
+/* Layout adjusters */
+.mt-l {
+  margin-top: -20px !important;
+}
+
+.mb-m {
+  margin-bottom: 9px;
+}
+
+/* Footer and header */
+
+/* Sticky footer */
+
+.main-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.break {
+  text-align: center;
+  margin-left:-100% !important;
+  margin-right:-100% !important;
+}
+
+/* Fonts */
+.footer {
+  position: absolute; /* push it off the bottom of the screen */
+  bottom: -9px;
+  text-align: center;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 13vw;
+  color: red;
+}
+
+.header {
+  text-align: center;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 20vw;
+  color: white;
+}
+
+
+/* Video player */
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

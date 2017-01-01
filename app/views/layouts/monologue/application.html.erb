@@ -7,20 +7,32 @@
   <%= render 'layouts/monologue/application/head' %>
 </head>
 <body>
-  <div class="container">
-    <header class="main-header sixteen columns clearfix">
-    </header>
+  <div class="main-container">
+    <div class="container">
+      <div class="sixteen columns">
+        <div class="header mt-l break">
+          WE ARE
+        </div>
+      </div>
+      <!-- Video content -->
+      <!-- <div class="content twelve columns">
+        <div class="videoWrapper">
+          <iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div> -->
 
-    <div class="content twelve columns">
-      <%= yield %>
+      <!-- Blog posts -->
+      <div class="content twelve columns">
+        <%= yield %>
+      </div>
+
     </div>
-
-      <%= render 'layouts/monologue/application/sidebar' %>
+      <!-- Page Footer Layout -->
+      <div class="container">
+      <footer class="footer sixteen columns">
+        <div class="break">RED STARS</div>
+      </footer>
+      </div>
   </div>
-  <% if content_for?(:footer) %>
-    <footer>
-      <%= yield :footer %>
-    </footer>
-  <% end %>
 </body>
 </html>
