@@ -34,6 +34,7 @@ html, body
   position: relative;
   overflow: hidden;
   /*height: 100%;*/
+  height:100vh;
   min-height: 100%;
 }
 
@@ -43,7 +44,6 @@ html, body
   margin-right:-100% !important;
 }
 
-/* Fonts */
 .footer {
   position: absolute; /* push it off the bottom of the screen */
   /*bottom: -160px;*/
