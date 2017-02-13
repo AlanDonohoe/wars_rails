@@ -8,7 +8,8 @@
     "moment": "^2.13.0",
     "angular": "^1.5.7",
     "angular-ui-router": "^0.3.1",
-    "jquery-modal": "0.7.0"
+    "jquery-modal": "0.7.0",
+    "masonry": "^4.1.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",

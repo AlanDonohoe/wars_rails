@@ -2,4 +2,5 @@
 $(function(){
   'use strict';
   countDownTimer.init();
+  masonryConfig.init();
 });
