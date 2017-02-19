@@ -160,11 +160,41 @@ html, body
 .masonry-grid-item--height3 { height: 260px; }
 .masonry-grid-item--height4 { height: 360px; }
 
-/* Stuff ripped from Milligram.css*/
+/* Media queries */
 
-.container {
-  /*overflow-x: hidden !important;*/
+@media only screen and (min-width: 400px) {
+  .footer {
+    top: 205px;
+  }
 }
+
+@media only screen and (min-width: 479px) and (max-width: 767px) {
+  .footer {
+    top: 285px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  .footer {
+    top: 505px;
+  }
+}
+
+@media only screen and (min-width: 961px) and (max-width: 1200px) {
+  .footer {
+    top: 640px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    top: 640px;
+  }
+}
+
+/* Stuff ripped from Milligram.css*/
+/*NB: monologue uses skeleton.css: https://github.com/jipiboily/monologue/blob/eb86247e948a6f4bba63c03d4151fc461b0c412f/app/assets/stylesheets/monologue/blog/skeleton/skeleton.css */
+
 .button,
 button,
 input[type='button'],
