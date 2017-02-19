@@ -26,6 +26,10 @@ html, body
   padding-top: 80px;
 }
 
+.pts-pc {
+  padding-top: 7%;
+}
+
 .pos-rel {
   position: relative;
 }
