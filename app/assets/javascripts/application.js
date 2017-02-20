@@ -5,7 +5,9 @@
 //= require moment/min/moment.min
 //= require jquery-modal/jquery.modal
 //= require masonry/dist/masonry.pkgd
-//= rquire masonry_config
+//= require masonry_config
+//= require letteringjs/jquery.lettering
+//= require textillate/jquery.textillate
 //= require app
 //= require main
 //= require_tree .

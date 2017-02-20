@@ -76,6 +76,7 @@ html, body
   font-family: 'Archivo Black', sans-serif;
   font-size: 15vw;
   color: red;
+  visibility: hidden;
 }
 
 .header {
@@ -347,4 +348,10 @@ input[type='submit'].button-clear[disabled]:hover,
 input[type='submit'].button-clear[disabled]:focus {
   color: #d1d1d1; /*#9b4dca;*/
 }
+
+/*Animted text*/
+.tlt {
+  visibility:hidden;
+}
+
 
