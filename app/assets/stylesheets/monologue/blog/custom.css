@@ -9,17 +9,37 @@ html, body
   position: relative;
 }
 
+/* Fonts */
+
+@font-face {
+  font-family: 'OuterspaceMilitia';
+  src:url('../fonts/OuterspaceMilitia.otf');
+  src:url('../fonts/OuterspaceMilitia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 /* Layout adjusters */
+.mt-h {
+  margin-top: -20px;
+}
+
 .mt-l {
-  margin-top: -20px !important;
+  margin-top: -15px;
+}
+
+.mth {
+  margin-top: 20px !important;
 }
 
 .mb-m {
-  margin-bottom: 9px;
+  margin-bottom: -9px;
 }
 
 .pbxl {
-  padding-bottom: 30px !important;
+  padding-bottom: 30px;
 }
 
 .ptxh {
@@ -79,21 +99,21 @@ html, body
   /*bottom: -160px;*/
   /*top: 670px;*/
   text-align: center;
-  font-family: 'Archivo Black', sans-serif;
-  font-size: 15vw;
+  font-family: 'OuterspaceMilitia'; /* 'Archivo Black', sans-serif; */
+  font-size: 10vw;
   color: red;
 }
 
 .header {
   text-align: center;
-  font-family: 'Archivo Black', sans-serif;
-  font-size: 20vw;
+  font-family: 'OuterspaceMilitia'; /* 'Archivo Black', sans-serif; */
+  font-size: 13vw;
   color: white;
 }
 
 .post-header a{
   text-align: center;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'OuterspaceMilitia'; /* 'Archivo Black', sans-serif; */
   font-size: 5vw;
   color: white;
   line-height: 5vw;
@@ -154,7 +174,7 @@ html, body
   border-color: hsla(0, 0%, 0%, 0.5);
   border-radius: 5px;
   /*text-align: center;*/
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'OuterspaceMilitia'; /* 'Archivo Black', sans-serif; */
   font-size: 5vw;
   color: white;
 }
