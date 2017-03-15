@@ -19,6 +19,9 @@ html, body
   font-style: normal;
 }
 
+body {
+  font-family: 'Space Mono', monospace;
+}
 
 
 /* Layout adjusters */
@@ -113,7 +116,7 @@ html, body
 
 .post-header a{
   text-align: center;
-  font-family: 'OuterspaceMilitia'; /* 'Archivo Black', sans-serif; */
+  /*font-family: 'OuterspaceMilitia';  'Archivo Black', sans-serif; */
   font-size: 5vw;
   color: white;
   line-height: 5vw;
@@ -174,7 +177,8 @@ html, body
   border-color: hsla(0, 0%, 0%, 0.5);
   border-radius: 5px;
   /*text-align: center;*/
-  font-family: 'OuterspaceMilitia'; /* 'Archivo Black', sans-serif; */
+  /*font-family: 'OuterspaceMilitia';*/ /* 'Archivo Black', sans-serif; */
+  font-family: 'Space Mono', monospace;
   font-size: 5vw;
   color: white;
 }
