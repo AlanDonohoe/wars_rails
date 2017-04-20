@@ -1,6 +1,6 @@
 <header class="post-header">
-  <div><%= link_to post.title, post.full_url %></div>
-  <div class="posted">
+  <div class="center-text mbl"><%= link_to post.title, post.full_url %></div>
+  <!-- <div class="posted"> -->
     <!-- <span data-monologue="time">
       <time datetime="<%= post.published_at %>">
         <%= I18n.localize(post.published_at.to_date, format: :long) %>
@@ -12,5 +12,5 @@
     <!-- <span data-monologue="disqus">
       <a href="<%= post.full_url + "#disqus_thread" %>"></a>
     </span> -->
-  </div>
+  <!-- </div> -->
 </header>

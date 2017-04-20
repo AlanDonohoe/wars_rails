@@ -13,7 +13,8 @@ var masonryConfig = (function () {
       $('.masonry-grid').masonry({
         itemSelector: '.masonry-grid-item',
         columnWidth: '.masonry-grid-sizer',
-        percentPosition: true
+        // percentPosition: true,
+        gutter: 10
       });
 
     }

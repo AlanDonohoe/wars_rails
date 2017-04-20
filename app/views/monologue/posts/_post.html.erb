@@ -1,5 +1,8 @@
 <section class="masonry-grid-item" data-tags="<%= post.tags.map(&:name).join(' ') %>">
-  <%= render partial: 'monologue/posts/post_header', locals: {post: post} %>
+  <%#render partial: 'monologue/posts/post_header', locals: {post: post, truncate_length: 17} %>
+  <header class="post-header">
+  <div class="pls"><%= link_to truncate(post.title, length: 17  ), post.full_url %></div>
+  </header>
 
   <div class="content" data-monologue="content">
     <%# truncate_html(post.content, length: Monologue::Config.preview_size, omission: '...') %>

@@ -3,6 +3,7 @@
 html, body
 {
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   background-color: black;
@@ -25,6 +26,267 @@ body {
 
 
 /* Layout adjusters */
+
+
+.pn {
+  padding: 0 !important;
+}
+.ps {
+  padding: 5px !important;
+}
+.pm {
+  padding: 10px !important;
+}
+.pl {
+  padding: 20px !important;
+}
+.ph {
+  padding: 40px !important;
+}
+
+.mn {
+  margin: 0 !important;
+}
+.ms {
+  margin: 5px !important;
+}
+.mm {
+  margin: 10px !important;
+}
+.ml {
+  margin: 20px !important;
+}
+.mh {
+  margin: 40px !important;
+}
+
+.ptn {
+  padding-top: 0 !important;
+}
+.ptx {
+  padding-top: 3px !important;
+}
+.pts {
+  padding-top: 5px !important;
+}
+.ptm {
+  padding-top: 10px !important;
+}
+.ptl {
+  padding-top: 20px !important;
+}
+.pth {
+  padding-top: 50px !important;
+}
+
+.prn {
+  padding-right: 0 !important;
+}
+.prx {
+  padding-right: 3px !important;
+}
+.prs {
+  padding-right: 5px !important;
+}
+.prm {
+  padding-right: 10px !important;
+}
+.prl {
+  padding-right: 20px !important;
+}
+.prh {
+  padding-right: 40px !important;
+}
+
+.pbn {
+  padding-bottom: 0 !important;
+}
+.pbx {
+  padding-bottom: 3px !important;
+}
+.pbs {
+  padding-bottom: 5px !important;
+}
+.pbm {
+  padding-bottom: 10px !important;
+}
+.pbl {
+  padding-bottom: 20px !important;
+}
+.pbh {
+  padding-bottom: 40px !important;
+}
+
+.pln {
+  padding-left: 0 !important;
+}
+.plx {
+  padding-left: 3px !important;
+}
+.pls {
+  padding-left: 5px !important;
+}
+.plm {
+  padding-left: 10px !important;
+}
+.pll {
+  padding-left: 20px !important;
+}
+.plh {
+  padding-left: 40px !important;
+}
+
+.mtn {
+  margin-top: 0px !important;
+}
+.mtx {
+  margin-top: 3px !important;
+}
+.mts {
+  margin-top: 5px !important;
+}
+.mtm {
+  margin-top: 10px !important;
+}
+.mtl {
+  margin-top: 20px !important;
+}
+.mth {
+  margin-top: 40px !important;
+}
+.mtxh {
+  margin-top: 80px !important;
+}
+
+.mrn {
+  margin-right: 0px !important;
+}
+.mrx {
+  margin-right: 3px !important;
+}
+.mrs {
+  margin-right: 5px !important;
+}
+.mrm {
+  margin-right: 10px !important;
+}
+.mrl {
+  margin-right: 20px !important;
+}
+
+.mbn {
+  margin-bottom: 0px !important;
+}
+.mbx {
+  margin-bottom: 3px !important;
+}
+.mbs {
+  margin-bottom: 5px !important;
+}
+.mbm {
+  margin-bottom: 10px !important;
+}
+.mbl {
+  margin-bottom: 20px !important;
+}
+.mbh {
+  margin-bottom: 40px !important;
+}
+.mbxh {
+  margin-bottom: 80px !important;
+}
+
+.mln {
+  margin-left: 0px !important;
+}
+.mlx {
+  margin-left: 3px !important;
+}
+.mls {
+  margin-left: 5px !important;
+}
+.mlm {
+  margin-left: 10px !important;
+}
+.mll {
+  margin-left: 20px !important;
+}
+
+.m-x {
+  margin: -3px !important;
+}
+.m-s {
+  margin: -5px !important;
+}
+.m-m {
+  margin: -10px !important;
+}
+.m-l {
+  margin: -20px !important;
+}
+.m-h {
+  margin: -40px !important;
+}
+
+.mt-x {
+  margin-top: -3px !important;
+}
+.mt-s {
+  margin-top: -5px !important;
+}
+.mt-m {
+  margin-top: -10px !important;
+}
+.mt-l {
+  margin-top: -20px !important;
+}
+.mt-h {
+  margin-top: -40px !important;
+}
+
+.mb-x {
+  margin-bottom: -3px !important;
+}
+.mb-s {
+  margin-bottom: -5px !important;
+}
+.mb-m {
+  margin-bottom: -10px !important;
+}
+.mb-l {
+  margin-bottom: -20px !important;
+}
+.mb-h {
+  margin-bottom: -40px !important;
+}
+
+.ml-s {
+  margin-left: -5px !important;
+}
+.ml-m {
+  margin-left: -10px !important;
+}
+.ml-l {
+  margin-left: -20px !important;
+}
+.ml-h {
+  margin-left: -40px !important;
+}
+
+.mr-s {
+  margin-left: -5px !important;
+}
+.mr-m {
+  margin-left: -10px !important;
+}
+.mr-l {
+  margin-left: -20px !important;
+}
+.mr-h {
+  margin-left: -40px !important;
+}
+
+
 .mt-h {
   margin-top: -20px;
 }
@@ -117,12 +379,23 @@ body {
 .post-header a{
   text-align: center;
   /*font-family: 'OuterspaceMilitia';  'Archivo Black', sans-serif; */
-  font-size: 5vw;
+  font-size: 2vw;
   color: white;
-  line-height: 5vw;
+  line-height: 2.5vw;
+  text-decoration: none;
 }
 .post-header a:hover {
   color: grey;
+}
+
+.monologue-content {
+  font-size: 1vw;
+  color: white;
+  line-height: 1.5vw;
+}
+
+.center-text {
+  text-align: center;
 }
 
 
@@ -378,3 +651,4 @@ input[type='submit'].button-clear[disabled]:focus {
   color: #d1d1d1; /*#9b4dca;*/
 }
 
+strong {font-weight: bold;color: white;}
