@@ -295,10 +295,6 @@ body {
   margin-top: -15px;
 }
 
-.mth {
-  margin-top: 20px !important;
-}
-
 .mb-m {
   margin-bottom: -9px;
 }
@@ -454,6 +450,7 @@ body {
   font-family: 'Space Mono', monospace;
   font-size: 5vw;
   color: white;
+  margin-bottom: 20px;
 }
 
 .masonry-grid-item--width2 { width:  40%; }
@@ -649,6 +646,40 @@ input[type='submit'].button-clear.button-disabled:focus,
 input[type='submit'].button-clear[disabled]:hover,
 input[type='submit'].button-clear[disabled]:focus {
   color: #d1d1d1; /*#9b4dca;*/
+}
+
+
+.button-call-to-action {
+  /*background-color: red;*/
+  border: 0.1rem white;
+  border-style: solid;
+  border-radius: 0.4rem;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  height: 3rem;
+  padding: 0 3rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: 25px;
+  animation: pulse 3s infinite;
+  /*
+  padding-top: 15px;
+  */
+}
+
+@keyframes pulse {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: #fdf1f1;
+  }
+  100% {
+    background-color: red;
+  }
 }
 
 strong {font-weight: bold;color: white;}
