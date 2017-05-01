@@ -1,13 +1,21 @@
+<div class="row">
+      <div class="sixteen columns center-text">
 <div class="modal fade flex-container" id="join-modal" ng-controller="EmailController as emailCntrl" style="display:none;">
-  <div class="flex-item centre">
-    <h2>Join</h2>
-    <p>We will not share your email with any third parties or evil corporations</p>
+  <div class="flex-item center-text">
+    <h2 class="grey-text">Join Us</h2>
+    <p class="grey-text">We will not share your email with any third parties or evil corporations</p>
     <form ng-submit="emailCntrl.postEmail(address)">
-      <fieldset>
+      <fieldset class="center-text">
         <label for="nameField">Email</label>
-        <input type="email" placeholder="gordon@onecor.com" id="nameField" ng-model="emailCntrl.emailAddress">
-        <input class="button button-primary mtl" type="submit" value="Join">
+        <div class="row">
+        <div class="sixteen columns center-text">
+        <input type="email" style="display: inline-block; width: 60%;" placeholder="gordon@onecor.com" id="nameField" ng-model="emailCntrl.emailAddress">
+          </div>
+</div>
+        <input class="button button-call-to-action" type="submit" value="Join Us">
       </fieldset>
     </form>
+  </div>
+</div>
   </div>
 </div>

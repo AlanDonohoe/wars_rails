@@ -1,13 +1,14 @@
 <% content_for :title do %>
   <%= @post.title %>
 <% end %>
-
+<!-- 
 <% content_for :meta_description do %>
   <%= truncate(strip_tags(@post.content), length: 155) %>
-<% end %>
+<% end %> -->
 
 <article>
   <%= render partial: 'monologue/posts/post_header', locals: {post: @post}%>
+  <h1> <%= @post.title %></h1>
   <div class="content monologue-content" data-monologue="content">
     <%= raw @post.content %>
   </div>
