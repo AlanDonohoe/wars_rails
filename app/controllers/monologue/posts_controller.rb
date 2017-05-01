@@ -1,10 +1,14 @@
 class Monologue::PostsController < Monologue::ApplicationController
   def index
     @page = params[:page].nil? ? 1 : params[:page]
-    @posts = Monologue::Post.page(@page).includes(:user).where.not(id: @top_post.id).published
     top_tag = Monologue::Tag.where(name: 'always-at-top').first
     @top_post = taggings.first.post if top_tag.present
-    @posts = [@top_post] + @posts.to_a if @top_post.present
+    if @top_post.present
+      @posts = Monologue::Post.page(@page).includes(:user).where.not(id: @top_post.id).published
+      @posts = [@top_post] + @posts.to_a
+    else
+      @posts = Monologue::Post.page(@page).includes(:user).published
+    end
   end
 
   def show
