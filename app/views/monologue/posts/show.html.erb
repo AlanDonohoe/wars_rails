@@ -8,7 +8,7 @@
 
 <article>
   <%= render partial: 'monologue/posts/post_header', locals: {post: @post}%>
-  <h1> <%= @post.title %></h1>
+  <h1> <%# @post.title %></h1>
   <div class="content monologue-content" data-monologue="content">
     <%= raw @post.content %>
   </div>
