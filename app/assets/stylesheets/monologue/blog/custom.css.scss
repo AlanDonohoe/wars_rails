@@ -426,7 +426,7 @@ p {
 }
 
 .monologue-content {
-  font-size: 14px;
+  font-size: 24px;
   line-height: 1.5;
   color: white;
   padding: 20px;
@@ -512,6 +512,7 @@ p {
 
 .masonry-grid-item--width2 { width:  40%; }
 .masonry-grid-item--width3 { width:  60%; }
+.masonry-grid-item--fullwidth { width:  100%; }
 
 .masonry-grid-item--height2 { height: 200px; }
 .masonry-grid-item--height3 { height: 260px; }
@@ -529,6 +530,14 @@ p {
   .post-header a{
     font-size: 20px;
   }
+
+  .monologue-content {
+    font-size: 18px;
+  }
+
+  .monologue-content p {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (min-width: 479px) and (max-width: 767px) {
@@ -540,6 +549,14 @@ p {
   }
   .post-header a{
     font-size: 20px;
+  }
+
+  .monologue-content {
+    font-size: 18px;
+  }
+
+  .monologue-content p {
+    font-size: 18px;
   }
 }
 
