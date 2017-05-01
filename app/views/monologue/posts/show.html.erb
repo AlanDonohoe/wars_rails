@@ -1,3 +1,6 @@
+<%= link_to root_path do %>
+  <%= image_tag 'red_star_stencil_07', class: 'header-home-page-img', height: 100, width: 100 %>
+<% end %>
 <% content_for :title do %>
   <%= @post.title %>
 <% end %>
@@ -22,5 +25,13 @@
   <!-- <div id="disqus_thread"></div>
   <%= render 'layouts/monologue/application/disqus_embed' %>
   <noscript>Please enable JavaScript to view the comments.</noscript> -->
+  <%= render 'footer/social_sharing_links' %>
+  <div class="row ptl">
+    <div class="sixteen columns center center-text">
+      <%= link_to root_path do %>
+        <%= image_tag 'red_star_stencil_07', class: '', height: 100, width: 100 %>
+      <% end %>
+    </div>
+  </div>
 </article>
 
