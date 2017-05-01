@@ -413,9 +413,11 @@ p {
 .post-header a{
   text-align: center;
   /*font-family: 'OuterspaceMilitia';  'Archivo Black', sans-serif; */
-  font-size: 2vw;
+  /* font-size: 2vw; 
+  line-height: 2.5vw; */
+  font-size: 40px;
+  line-height: 1.5;
   color: white;
-  line-height: 2.5vw;
   text-decoration: none;
 }
 
@@ -493,7 +495,9 @@ p {
   /*text-align: center;*/
   /*font-family: 'OuterspaceMilitia';*/ /* 'Archivo Black', sans-serif; */
   font-family: 'Space Mono', monospace;
-  font-size: 5vw;
+  /* font-size: 5vw; */
+  font-size: 14px;
+  line-height: 1.5;
   color: white;
   margin-bottom: 20px;
 }
@@ -507,15 +511,27 @@ p {
 
 /* Media queries */
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 400px) and (max-width: 479px) {
   .footer {
     top: 205px;
+  }
+  .masonry-grid-item {
+    height: 100px;
+  }
+  .post-header a{
+    font-size: 20px;
   }
 }
 
 @media only screen and (min-width: 479px) and (max-width: 767px) {
   .footer {
     top: 285px;
+  }
+  .masonry-grid-item {
+    height: 100px;
+  }
+  .post-header a{
+    font-size: 20px;
   }
 }
 
