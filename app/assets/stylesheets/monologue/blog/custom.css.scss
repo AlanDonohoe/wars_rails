@@ -811,7 +811,18 @@ strong {
   color: white;
 }
 
-/* Jquery modal stles - having issues with the asset pipeline Monologue and multiple css files*/
+/* Nutty experiments */
+
+#space {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #000000;
+}
+
+
+/* Jquery modal styles - having issues with the asset pipeline Monologue and multiple css files*/
 .blocker {
   position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
