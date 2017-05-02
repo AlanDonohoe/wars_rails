@@ -500,8 +500,8 @@ p {
   float: left;
   /*background: #FF0000;*/
   background-image: asset-data-url('post-index-bkrgd.jpg');
-  border: 2px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.5);
+  border: 2px solid black;
+  border-color: black;
   border-radius: 5px;
   /*text-align: center;*/
   /*font-family: 'OuterspaceMilitia';*/ /* 'Archivo Black', sans-serif; */
@@ -771,9 +771,10 @@ input[type="button"]:hover {
 }
 
 .button-call-to-action {
-  /*background-color: red;*/
+  /*background-color: red;
   border: 0.1rem white;
   border-style: solid;
+  */
   border-radius: 0.4rem;
   color: #fff;
   cursor: pointer;
@@ -792,6 +793,12 @@ input[type="button"]:hover {
 }
 .button-call-to-action:hover {
 color: white;
+}
+.button-call-to-action > span {
+  color: black;
+}
+.button-call-to-action > span:hover {
+  color: #555D60;
 }
 
 @keyframes pulse {

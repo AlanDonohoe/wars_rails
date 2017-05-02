@@ -37,7 +37,7 @@ $('document').ready(function() {
     stars.push(star);
   }
   
-  setInterval(animate, 100 / fps);
+  setInterval(animate, 500 / fps);
 });
 
 /**
@@ -108,9 +108,9 @@ Star.prototype.draw = function() {
   }
   context.lineTo(0, this.length);
   context.closePath();
-  context.fillStyle = "rgba(255, 255, 255, " + this.opacity + ")";
+  context.fillStyle = "rgba(255, 0, 0, " + this.opacity + ")";
   context.shadowBlur = 5;
-  context.shadowColor = '#fFF0000';
+  context.shadowColor = '#FFFFFF';
   context.fill();
   
   context.restore();
@@ -146,7 +146,7 @@ Star.prototype.draw = function() {
     </div>
     <div class="row mth">
       <div class="sixteen columns center-text -mbl mth pth -pbh">
-        <a class="center-text button-call-to-action large-text ptl" href="#join-modal" rel="modal:open">Join Us</a>
+        <a class="center-text button-call-to-action large-text ptl" href="#join-modal" rel="modal:open"><span class="animate">Join Us</span></a>
       </div>
     </div>
     <%= render 'modals/email_sign_up' %>
