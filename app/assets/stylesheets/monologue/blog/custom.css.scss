@@ -507,10 +507,11 @@ p {
   /*font-family: 'OuterspaceMilitia';*/ /* 'Archivo Black', sans-serif; */
   font-family: 'Space Mono', monospace;
   /* font-size: 5vw; */
-  font-size: 14px;
+  font-size: 30px;
   line-height: 1.5;
   color: white;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 
 .masonry-grid-item--width2 { width:  40%; }
@@ -529,6 +530,8 @@ p {
   }
   .masonry-grid-item {
     height: 100px;
+    font-size: 12px;
+    overflow: hidden;
   }
   .post-header a{
     font-size: 20px;
@@ -549,6 +552,7 @@ p {
   }
   .masonry-grid-item {
     height: 100px;
+    font-size: 16px;
   }
   .post-header a{
     font-size: 20px;
@@ -566,6 +570,10 @@ p {
 @media only screen and (min-width: 768px) and (max-width: 960px) {
   .footer {
     top: 505px;
+  }
+  .masonry-grid-item {
+    height: 100px;
+    font-size: 18px;
   }
 }
 
