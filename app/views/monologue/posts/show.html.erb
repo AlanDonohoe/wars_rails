@@ -1,6 +1,10 @@
-<%= link_to root_path do %>
-  <%= image_tag 'red_star_stencil_07', class: 'header-home-page-img', height: 100, width: 100 %>
-<% end %>
+<div class="row ptl">
+  <div class="sixteen columns center center-text">
+  <%= link_to root_path do %>
+    <%= image_tag 'red_star_stencil_07', class: 'header-home-page-img', height: 100, width: 100 %>
+  <% end %>
+  </div>
+</div>
 <% content_for :title do %>
   <%= @post.title %>
 <% end %>
