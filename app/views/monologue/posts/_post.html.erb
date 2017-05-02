@@ -1,7 +1,8 @@
+<%= link_to post.full_url do %>
 <section class="masonry-grid-item <%= post.tags.map(&:name).join(' ')%>" data-tags="<%= post.tags.map(&:name).join(' ') %>">
   <%#render partial: 'monologue/posts/post_header', locals: {post: post, truncate_length: 17} %>
   <header class="post-header">
-  <div class="pls"><%= link_to truncate(post.title, length: 17  ), post.full_url %></div>
+    <div class="pls"><%= truncate(post.title, length: 100 ) %></div>
   </header>
 
   <div class="content" data-monologue="content">
@@ -13,3 +14,4 @@
   </div> -->
   <%# link_to t(".readmore"), post.full_url, class: "button button-outline" %>
 </section>
+<% end %>
