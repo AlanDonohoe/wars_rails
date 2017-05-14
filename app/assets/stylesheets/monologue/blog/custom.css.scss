@@ -499,7 +499,8 @@ p {
   height: 200px;
   float: left;
   /*background: #FF0000;*/
-  background-image: asset-data-url('post-index-bkrgd.jpg');
+  background: #bd1717;
+  /* background-image: asset-data-url('post-index-bkrgd.jpg'); */
   border: 2px solid black;
   border-color: black;
   border-radius: 5px;
@@ -509,7 +510,8 @@ p {
   /* font-size: 5vw; */
   font-size: 30px;
   line-height: 1.5;
-  color: white;
+  /* color: white; */
+  color: #ffc2c2;
   margin-bottom: 20px;
   overflow: hidden;
 }
