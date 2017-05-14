@@ -8,8 +8,12 @@
       // console.log('EmailController emailAddress: ' + this.emailAddress);
       postNewEmailAddress($http, this.emailAddress);
       this.emailAddress ='';
-      // TODO: give some confirmation to user here...
-      $.modal.close();
+      $('.hide-on-submit').hide();
+      $('.show-on-submit').show();
+      setTimeout(function() {
+        $.modal.close();
+      }, 1000);
+      
     };
 
     function postNewEmailAddress($http, emailAddress) {

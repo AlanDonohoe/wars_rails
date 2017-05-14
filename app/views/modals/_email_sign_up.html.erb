@@ -1,14 +1,19 @@
 <div class="modal fade flex-container" id="join-modal" ng-controller="EmailController as emailCntrl" style="display:none;">
-  <div class="flex-item center-text">
+  <div class="flex-item center-text content-swap">
     <h2 class="grey-text">Join Us</h2>
+    <div class="hide-on-submit">
     <p class="grey-text">We will not share your email with any third parties or evil corporations</p>
-    <form ng-submit="emailCntrl.postEmail(address)">
-      <fieldset class="center-text">
-        <label for="nameField">Email</label>
-        <input type="email" style="display: block; width: 60%;" class="center mbl" placeholder="gordon@onecor.com" id="nameField" ng-model="emailCntrl.emailAddress">
-        <!-- <input class="button button-call-to-action mtl" type="submit" value="Join Us"> -->
-        <a class="center-text button-call-to-action large-text mtl ptm" href="#" onclick="$(this).closest('form').submit(); return false;">Join Us</a>
-      </fieldset>
-    </form>
+      <form ng-submit="emailCntrl.postEmail(address)">
+        <fieldset class="center-text">
+          <label for="nameField">Email</label>
+          <input type="email" style="display: block; width: 60%;" class="center mbl" placeholder="gordon@onecor.com" id="nameField" ng-model="emailCntrl.emailAddress">
+          <!-- <input class="button button-call-to-action mtl" type="submit" value="Join Us"> -->
+          <a class="center-text button-call-to-action large-text mtl ptm" href="#" onclick="$(this).closest('form').submit(); return false;">Join Us</a>
+        </fieldset>
+      </form>
+    </div>
+    <div class="show-on-submit" style="display: none;">
+      <p class="grey-text mth">Thank you for joining us.</p>
+    </div>
   </div>
 </div>
