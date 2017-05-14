@@ -6,7 +6,8 @@
       <fieldset class="center-text">
         <label for="nameField">Email</label>
         <input type="email" style="display: block; width: 60%;" class="center mbl" placeholder="gordon@onecor.com" id="nameField" ng-model="emailCntrl.emailAddress">
-        <input class="button button-call-to-action mtl" type="submit" value="Join Us">
+        <!-- <input class="button button-call-to-action mtl" type="submit" value="Join Us"> -->
+        <a class="center-text button-call-to-action large-text mtl ptm" href="#" onclick="$(this).closest('form').submit(); return false;">Join Us</a>
       </fieldset>
     </form>
   </div>

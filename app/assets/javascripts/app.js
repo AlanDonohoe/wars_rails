@@ -1,5 +1,6 @@
 // Angular app.
 (function() {
+  'use strict';
   var app = angular.module('wars',[]);
   app.controller('EmailController', ['$http', function($http) {
     this.emailAddress ='';
@@ -7,7 +8,8 @@
       // console.log('EmailController emailAddress: ' + this.emailAddress);
       postNewEmailAddress($http, this.emailAddress);
       this.emailAddress ='';
-      $.modal.close(); 
+      // TODO: give some confirmation to user here...
+      $.modal.close();
     };
 
     function postNewEmailAddress($http, emailAddress) {
