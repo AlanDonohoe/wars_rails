@@ -410,6 +410,11 @@ p {
   color: white;
 }
 
+.post-header {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 .post-header a{
   text-align: center;
   /*font-family: 'OuterspaceMilitia';  'Archivo Black', sans-serif; */
@@ -430,6 +435,8 @@ p {
   line-height: 1.5;
   color: white;
   padding: 20px;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .monologue-content p {
@@ -514,6 +521,10 @@ p {
   color: #ffc2c2;
   margin-bottom: 20px;
   overflow: hidden;
+}
+
+.masonry-grid-item:hover {
+  color: grey;
 }
 
 .masonry-grid-item--width2 { width:  40%; }

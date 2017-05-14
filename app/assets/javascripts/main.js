@@ -3,6 +3,12 @@ $(function(){
   'use strict';
   //countDownTimer.init();
   masonryConfig.init();
+  
+  $.modal.defaults = {
+    fadeDuration: 500,
+    showClose: true
+  };
+
   $('.tlt').textillate(
     {
       initialDelay: 1000,

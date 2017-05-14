@@ -7,13 +7,12 @@
     this.postEmail = function postEmail() {
       // console.log('EmailController emailAddress: ' + this.emailAddress);
       postNewEmailAddress($http, this.emailAddress);
-      this.emailAddress ='';
+      this.emailAddress = '';
       $('.hide-on-submit').hide();
       $('.show-on-submit').show();
       setTimeout(function() {
         $.modal.close();
-      }, 1000);
-      
+      }, 2000);
     };
 
     function postNewEmailAddress($http, emailAddress) {
@@ -23,9 +22,9 @@
         data: JSON.stringify({email: {address: emailAddress, api_key: 'ea7cbe8fd41512f3'}}),
         headers: {'Content-Type': 'application/json'}}
       ).then(function successCallback(response) {
-        console.log('successCallback' + response);
+        // console.log('successCallback' + response);
       }, function errorCallback(response) {
-        console.log('errorCallback' + response);
+        // console.log('errorCallback' + response);
       });
     }
   }]);
