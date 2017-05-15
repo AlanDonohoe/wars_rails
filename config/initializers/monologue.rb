@@ -23,11 +23,11 @@ Monologue.config do |config|
 
   # ANALYTICS
   # config.gauge_analytics_site_id = "YOUR COGE FROM GAUG.ES"
-  # config.google_analytics_id = "YOUR GA CODE"
-
+  # config.google_analytics_id = "YOUR GA CODE" # Just put it straight in the partial
+ 
   # config.sidebar = ["latest_posts", "latest_tweets", "categories", "tag_cloud"]
 
-
+  # TODO:
   #SOCIAL
   # config.twitter_username = "myhandle"
   # config.facebook_url = "https://www.facebook.com/myhandle"
