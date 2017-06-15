@@ -413,6 +413,7 @@ p {
 .post-header {
   padding-left: 10%;
   padding-right: 10%;
+  text-align: center;
 }
 
 .post-header a{
@@ -537,68 +538,68 @@ p {
 
 /* Media queries */
 
-@media only screen and (min-width: 400px) and (max-width: 479px) {
+@media only screen and (max-width: 479px) {
   .footer {
-    top: 205px;
+    top: 205px !important;
   }
   .masonry-grid-item {
-    height: 100px;
-    font-size: 12px;
-    overflow: hidden;
+    height: 100px !important;
+    font-size: 12px !important;
+    overflow: hidden !important;
   }
-  .post-header a{
-    font-size: 20px;
+  .post-header {
+    font-size: 20px !important;
   }
 
   .monologue-content {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 
   .monologue-content p {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 }
 
 @media only screen and (min-width: 479px) and (max-width: 767px) {
   .footer {
-    top: 285px;
+    top: 285px !important;
   }
   .masonry-grid-item {
-    height: 100px;
-    font-size: 16px;
+    height: 100px !important;
+    font-size: 16px !important;
   }
-  .post-header a{
-    font-size: 20px;
+  .post-header {
+    font-size: 20px !important;
   }
 
   .monologue-content {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 
   .monologue-content p {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 960px) {
   .footer {
-    top: 505px;
+    top: 505px !important;
   }
   .masonry-grid-item {
-    height: 100px;
-    font-size: 18px;
+    height: 100px !important;
+    font-size: 18px !important;
   }
 }
 
 @media only screen and (min-width: 961px) and (max-width: 1200px) {
   .footer {
-    top: 640px;
+    top: 640px !important;
   }
 }
 
 @media (min-width: 1200px) {
   .footer {
-    top: 640px;
+    top: 640px !important;
   }
 }
 
