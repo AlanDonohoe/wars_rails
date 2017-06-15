@@ -1,5 +1,5 @@
 # https://github.com/jipiboily/monologue/wiki/Configuration
-
+# include ActionView::Helpers::AssetUrlHelper
 Monologue.config do |config|
   config.site_name = "WARS"
   config.site_subtitle = "We Are Red Stars"
@@ -32,6 +32,8 @@ Monologue.config do |config|
   # config.twitter_username = "myhandle"
   # config.facebook_url = "https://www.facebook.com/myhandle"
   # config.facebook_logo = 'logo.png'
+  # TODO: host the red star on aws and point to it here...
+  # config.facebook_logo = asset_path('images/red_star_stencil_08')
   # config.google_plus_account_url = "https://plus.google.com/u/1/.../posts"
   # config.linkedin_url = "http://www.linkedin.com/in/myhandle"
   # config.github_username = "myhandle"
