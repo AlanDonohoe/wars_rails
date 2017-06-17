@@ -455,6 +455,14 @@ p {
   height: auto;
 }
 
+.monologue-content a {
+  color: red;
+}
+
+.monologue-content a:hover {
+  color: #da0000;
+}
+
 .center-text {
   text-align: center;
 }
