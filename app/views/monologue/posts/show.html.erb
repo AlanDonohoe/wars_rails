@@ -14,9 +14,8 @@
 <% end %> -->
 
 <article>
-  <%= render partial: 'monologue/posts/post_header', locals: {post: @post}%>
-  <h1> <%# @post.title %></h1>
   <div class="content monologue-content" data-monologue="content">
+    <%= render partial: 'monologue/posts/post_header', locals: {post: @post}%>
     <%= raw @post.content %>
   </div>
 
