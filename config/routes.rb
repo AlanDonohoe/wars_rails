@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   # If you would like to change where this engine is mounted, simply change the :at option to something different.
   #
   # We ask that you don't use the :as option here, as Monologue relies on it being the default of "monologue"
-  mount Monologue::Engine, at: '/live' # or whatever path, be it "/blog" or "/monologue"
+  mount Monologue::Engine, at: '/' # or whatever path, be it "/blog" or "/monologue"
 end
